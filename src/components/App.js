@@ -5,7 +5,7 @@ import { API_KEY, BASE_URL } from "../constants/index";
 import Potd from "./Potd";
 import Explanation from "./Explanation";
 import Title from "./Title";
-import Artist from "./Artist";
+import Copyright from "./Copyright";
 
 function App() {
   const [apiData, setApiData] = useState("");
@@ -36,7 +36,7 @@ function App() {
         <Potd apiData={apiData} />
         <div>
           <Title apiData={apiData} />
-          <Artist apiData={apiData} />
+          <Copyright apiData={apiData} />
         </div>
       </div>
       <div>
