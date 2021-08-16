@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_KEY, BASE_URL } from "../constants/index";
-// import styled from "styled-components";
+import styled from "styled-components";
+
+const StyledSearchDate = styled.div`
+  input {
+    color: ${(pr) => pr.theme.tertiaryColor};
+  }
+`;
 
 export default function SearchDate() {
   const [apiData, setApiData] = useState(null);
@@ -33,10 +39,10 @@ export default function SearchDate() {
   const photo = apiData ? apiData.url : null;
   const photoAlt = apiData ? apiData.title : null;
   return (
-    <div className="App">
+    <StyledSearchDate>
       <input type="date" onChange={dateHandler} />
       {error && <h2>{error}</h2>}
       {searchDate && <div>{photo && photoAlt && <img src={photo} alt={photoAlt} />}</div>}
-    </div>
+    </StyledSearchDate>
   );
 }
