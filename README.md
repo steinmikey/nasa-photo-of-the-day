@@ -14,7 +14,7 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 ## Introduction
 
-In this project you will build out a application to show the NASA photo of the day.
+In this project you will build out an application to show the NASA photo of the day.
 
 - This is a really fun project, and one to show your family and friends when you've finished.
 - You will be starting from scratch and building the entire app
@@ -88,9 +88,9 @@ Now is the time to build out your other components. Compose your UI, and then pa
 if (!props.photoOfTheDay) return <h3>Loading...</h3>;
 
 // Display your component as normal after the data has been fetched
-return (
-  {/* your normal JSX here */}
-);
+return {
+  /* your normal JSX here */
+};
 ```
 
 - Read through the API docs carefully. You will read through many technical docs as a developer, so start now to try and understand them.
@@ -108,6 +108,6 @@ Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge Branch into `main` (student's Repository).
 
-----
+---
 
 ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)
